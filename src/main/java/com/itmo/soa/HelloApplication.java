@@ -1,9 +1,9 @@
-package com.itmo.soalab2service1;
+package com.itmo.soa;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-@ApplicationPath("/api")
+@ApplicationPath("/")
 public class HelloApplication extends Application {
 
 }

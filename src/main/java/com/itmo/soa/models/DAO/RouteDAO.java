@@ -1,6 +1,5 @@
 package com.itmo.soa.models.DAO;
 
-import com.itmo.soa.models.Route;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +20,7 @@ public class RouteDAO {
     private long id;
     private String name;
     private int coordinates_id;
-    private java.time.LocalDateTime creationDate;
+    private LocalDateTime creationDate;
     private int from_id;
     private int to_id;
     private Integer distance;
@@ -33,7 +32,7 @@ public class RouteDAO {
         this.to_id = to_id;
         this.distance = distance;
 
-        this.creationDate = java.time.LocalDateTime.now();
+        this.creationDate = LocalDateTime.now();
     }
 
     public LocalDateTime getcreation_date() {
